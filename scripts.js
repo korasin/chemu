@@ -87,12 +87,12 @@ clear() {
   }
 }
   
-//   appendNumber(number) {
-//     if (number === '.' && this.currentOperand.includes('.')) return
-//     this.currentOperand = this.currentOperand.toString() + number.toString()
-//   }
+  appendNumber(number) {
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
+  }
 
-// }
+
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
 numberButtons.forEach(button => {
